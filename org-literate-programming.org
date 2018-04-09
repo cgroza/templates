@@ -1,0 +1,20 @@
+#+AUTHOR: First Last
+#+TITLE: Title
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
+#+LATEX_HEADER: \usepackage{hyperref}
+
+#+OPTIONS: toc:nil
+
+#+NAME: block name
+#+BEGIN_SRC R :exports both :results output graphics :file fig1.pdf :session
+  library(ggplot2)
+  data(iris)
+  ggplot(iris) + geom_point(aes(x=Sepal.Length, y=Sepal.Width))
+#+END_SRC
+#+CAPTION: Org Fig
+#+LABEL: label_name
+#+RESULTS: block name
+[[file:fig1.pdf]]
+
