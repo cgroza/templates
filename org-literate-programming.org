@@ -1,3 +1,4 @@
+#+OPTIONS: toc:nil num:nil
 #+STARTUP: inlineimages latexpreview
 #+AUTHOR: First Last
 #+TITLE: Org R template
@@ -6,7 +7,6 @@
 #+LATEX_CLASS_OPTIONS: [a4paper]
 #+LATEX_HEADER: \usepackage{hyperref}
 
-#+OPTIONS: toc:nil
 
 * Plot example
 #+NAME: iris_plot
