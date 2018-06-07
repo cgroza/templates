@@ -1,0 +1,37 @@
+#+STARTUP: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+
+#+BEAMER_THEME: boxes [height=20pt]
+#+OPTIONS: toc:nil H:2
+
+* Intro
+** Slide 1
+   - item 1
+   - item 2
+   - item 3
+** Source block
+
+  #+LATEX: \small
+  #+BEGIN_SRC R :exports both  :results output table :session *R*
+  data(mtcars)
+  head(mtcars[c("mpg", "cyl")])
+  #+END_SRC 
+  #+RESULTS:
+  :                    mpg cyl
+  : Mazda RX4         21.0   6
+  : Mazda RX4 Wag     21.0   6
+  : Datsun 710        22.8   4
+  : Hornet 4 Drive    21.4   6
+  : Hornet Sportabout 18.7   8
+  : Valiant           18.1   6
+
+**  Image
+  #+BEGIN_SRC R :exports results :results output graphics :file plot.png 
+  library(ggplot2)
+  ggplot(mtcars) + geom_point(aes(x=mpg, y=cyl))
+  #+END_SRC 
+
+  #+ATTR_LATEX: :width 0.4\textwidth
+  #+RESULTS:
+  [[file:plot.png]]
