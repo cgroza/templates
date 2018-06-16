@@ -20,8 +20,6 @@
 #+RESULTS: iris_plot
 [[file:fig1.png]]
 
-
-
 label:iris_plot_label
 
 * Table example
@@ -46,3 +44,6 @@ head(mtcars)
 * References work with labels
 
 ref:iris_plot_label 
+
+bibliography:~/Dropbox/Bib/cgroza.bib
+cite:oesper_2012_cancer

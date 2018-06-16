@@ -1,0 +1,59 @@
+#+STARTUP: beamer
+#+OPTIONS: toc:nil H:2
+#+LATEX_CLASS: beamer
+
+#+LaTeX: \setbeamercolor{Colorbox}{bg=magenta,fg=white}
+* note block
+** Drawer definitions
+*** Note
+    :PROPERTIES:
+    :BEAMER_env: alertblock
+    :END:
+    This is an alert
+   
+*** Example block
+    :PROPERTIES:
+    :BEAMER_env: exampleblock
+    :END:
+    This is an example
+
+
+*** Colorbox
+    :PROPERTIES:
+    :BEAMER_env: beamercolorbox
+    :BEAMER_opt: shadow=true, rounded=true
+    :END:
+
+    This is a color box
+
+*** Definition
+    :PROPERTIES:
+    :BEAMER_env: definition
+    :END:
+
+    This is a definition
+
+*** Example
+    :PROPERTIES:
+    :BEAMER_env: example
+    :END:
+
+    This is an example
+
+*** Quotation                                                   :B_quotation:
+    :PROPERTIES:
+    :BEAMER_env: quotation
+    :END:
+
+** Columns
+
+***  Column 1                                                         :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.48
+    :END:
+    This is the first column
+*** Column 2                                                          :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.48
+    :END:
+    This is the second column
